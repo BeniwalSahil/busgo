@@ -1,0 +1,469 @@
+.government-section {
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 45px 25px 55px;
+    font-family: "Poppins", sans-serif;
+}
+
+.government-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.government-subtitle {
+    color: #e53935;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.government-heading h2 {
+    color: #14213d;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 6px 0;
+}
+
+.government-heading p {
+    color: #7b8494;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* View All Button */
+
+.government-view-btn {
+    border: 1px solid #e5e9ef;
+    border-radius: 9px;
+    padding: 10px 17px;
+    background: #fff;
+    color: #e53935;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.government-view-btn:hover {
+    background: #e53935;
+    color: #fff;
+    border-color: #e53935;
+}
+
+/* Slider Wrapper */
+
+.government-slider-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Horizontal Slider */
+
+.government-slider {
+    display: flex;
+    gap: 20px;
+
+    width: 100%;
+    overflow-x: auto;
+
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+    padding: 5px 3px 15px;
+}
+
+.government-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Individual Cards */
+
+.government-card {
+    flex: 0 0 370px;
+    min-width: 0;
+    min-height: 320px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 22px;
+    overflow: hidden;
+    background: #ffffff;
+
+    border: 1px solid #f0f0f0;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.government-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(20, 33, 61, 0.12);
+}
+
+/* Slider Arrows */
+
+.government-arrow {
+    width: 48px;
+    height: 48px;
+
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+
+    z-index: 5;
+    border: none;
+    border-radius: 50%;
+
+    background: #ffffff;
+    color: #202020;
+
+    font-size: 35px;
+    line-height: 1;
+    cursor: pointer;
+
+    box-shadow: 0 3px 13px rgba(0, 0, 0, 0.16);
+    transition: all 0.3s ease;
+}
+
+.government-arrow:hover {
+    background: #e53935;
+    color: #ffffff;
+}
+
+.government-left-arrow {
+    left: -17px;
+}
+
+.government-right-arrow {
+    right: -17px;
+}
+
+.government-card {
+    width: 100%;
+    min-width: 0;
+    min-height: 320px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 22px;
+    overflow: hidden;
+    background: #ffffff;
+
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.government-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(20, 33, 61, 0.12);
+}
+
+.government-card-header {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 22px 20px;
+    min-height: 110px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Government Logo */
+
+.government-logo {
+    width: 57px;
+    height: 57px;
+    min-width: 57px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #f3f4f6;
+
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.hrtc-logo {
+    color: #d83b45;
+    background: #fff0f0;
+    border: 2px solid #e9b8bd;
+}
+
+.astc-logo {
+    color: #283c28;
+    background: #f0f0e5;
+    border: 2px solid #d1d1bc;
+}
+
+.upsrtc-logo {
+    color: #8b5ac1;
+    background: #f4edfc;
+    border: 2px solid #dfc9f5;
+}
+
+.ctu-logo {
+    color: #00a9d6;
+    background: #e8faff;
+    border: 2px solid #b8eafa;
+    font-size: 13px;
+}
+
+.sbstc-logo {
+    color: #087c4b;
+    background: #e8f7ee;
+    border: 2px solid #b6dfc6;
+}
+
+/* Operator Information */
+
+.government-operator-info {
+    min-width: 0;
+    flex: 1;
+}
+
+.government-name-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.government-name-row h3 {
+    color: #202020;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.government-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 7px;
+    background: #07843b;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.government-operator-info > p {
+    color: #858585;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 5px 0 0;
+}
+
+.government-card-body {
+    flex: 1;
+    padding: 22px 18px 18px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.government-services {
+    color: #282828;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    text-align: center;
+    margin: 0;
+    max-width: 310px;
+}
+
+/* Booking Partner */
+
+.government-partner {
+    width: 100%;
+    min-height: 39px;
+    padding: 8px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    border-radius: 10px;
+    background: #f2f2f8;
+    color: #30303a;
+
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.partner-icon {
+    color: #e53945;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+}
+
+.government-card-footer {
+    min-height: 58px;
+    padding: 14px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    background: #fde7e6;
+    color: #292929;
+
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.refund-icon {
+    color: #e53935;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+
+    .government-slider {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+}
+
+/* Small Tablet */
+
+@media (max-width: 768px) {
+
+    .government-section {
+        padding: 35px 18px;
+    }
+
+    .government-heading h2 {
+        font-size: 23px;
+    }
+
+    .government-heading p {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .government-card {
+        min-height: 310px;
+    }
+
+    .government-card-header {
+        padding: 18px 15px;
+        gap: 10px;
+    }
+
+    .government-logo {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        font-size: 16px;
+    }
+
+    .government-name-row h3 {
+        font-size: 17px;
+    }
+
+    .government-operator-info > p {
+        font-size: 10px;
+    }
+
+    .government-services {
+        font-size: 13px;
+    }
+
+    .government-partner {
+        font-size: 10px;
+    }
+
+    .government-card-footer {
+        font-size: 10px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .government-slider {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .government-heading {
+        gap: 10px;
+    }
+
+    .government-view-btn {
+        padding: 9px 10px;
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    .government-card {
+        min-height: 300px;
+    }
+
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .government-card {
+        flex-basis: 320px;
+        min-height: 310px;
+    }
+
+    .government-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 29px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+    .government-card {
+        flex-basis: 285px;
+    }
+
+    .government-left-arrow {
+        left: -10px;
+    }
+
+    .government-right-arrow {
+        right: -10px;
+    }
+
+}

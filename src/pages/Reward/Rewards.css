@@ -1,0 +1,247 @@
+
+.trip-reward-section {
+    width: 100%;
+     max-width: 700px; 
+    /*margin: 0 auto; */
+    padding: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Heading */
+
+.trip-reward-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #171717;
+    margin: 0 0 22px;
+}
+
+/* Main Banner */
+
+.trip-reward-banner {
+    position: relative;
+    overflow: hidden;
+
+    width: 70%;
+    min-height: 220px;
+
+    padding: 24px 42px;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        110deg,
+        #fff5e5 0%,
+        #fff5e9 48%,
+        #f7e0f7 100%
+    );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13px;
+}
+
+/* Branding */
+
+.trip-reward-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.trip-reward-logo {
+    width: 30px;
+    height: 29px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e31e24;
+    color: #ffffff;
+
+    border: 3px solid #ffcc00;
+    border-radius: 11px;
+
+    transform: rotate(45deg);
+}
+
+.trip-reward-logo svg {
+    transform: rotate(-45deg);
+    font-size: 17px;
+}
+
+.trip-reward-brand h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #e31e24;
+    margin: 0;
+}
+
+.trip-reward-brand h3 span {
+    color: #14213d;
+    margin-left: 4px;
+}
+
+/* Trip Progress */
+
+.trip-progress {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.trip-progress h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222222;
+    margin: 0;
+}
+
+.trip-milestones {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Hexagon */
+
+.trip-hexagon {
+    width: 30px;
+    height: 29px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #d6cec2;
+    color: #ffffff;
+
+    font-size: 19px;
+    font-weight: 600;
+
+    clip-path: polygon(
+        50% 0%,
+        90% 22%,
+        90% 78%,
+        50% 100%,
+        10% 78%,
+        10% 22%
+    );
+
+    transition: 0.3s;
+}
+
+.trip-hexagon.active {
+    background: #e31e24;
+    outline: 3px solid #ffcb00;
+    outline-offset: -3px;
+}
+
+/* Message */
+
+.trip-reward-message {
+    font-size: 15px;
+    color: #77716b;
+    font-weight: 400;
+    margin: 0;
+}
+
+.trip-reward-message strong {
+    color: #292929;
+    font-weight: 700;
+}
+
+/* Footer */
+
+.trip-reward-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 430px;
+    margin-top: 5px;
+
+    color: #77716b;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.trip-reward-footer span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.trip-reward-footer svg {
+    color: #e53935;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .trip-reward-section {
+        padding: 20px 15px;
+    }
+
+    .trip-reward-title {
+        font-size: 23px;
+    }
+
+    .trip-reward-banner {
+        min-height: 210px;
+        padding: 23px 20px;
+        border-radius: 22px;
+    }
+
+    .trip-reward-message {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .trip-progress h2 {
+        font-size: 21px;
+    }
+
+    .trip-hexagon {
+        width: 34px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+    .trip-milestones {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .trip-reward-brand h3 {
+        font-size: 18px;
+    }
+
+    .trip-progress {
+        gap: 12px;
+    }
+
+    .trip-progress h2 {
+        font-size: 18px;
+    }
+
+    .trip-hexagon {
+        width: 30px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .trip-reward-message {
+        font-size: 13px;
+    }
+
+    .trip-reward-footer {
+        font-size: 9px;
+    }
+
+}
