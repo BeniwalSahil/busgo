@@ -8,14 +8,15 @@ import { CiStar } from "react-icons/ci";
 import { CiBank } from "react-icons/ci";
 import { CiCreditCard1 } from "react-icons/ci";
 import { IoTrainOutline } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 const Offers = () => {
 
     const [activeTab, setActiveTab] = useState("All");
     const [showAll, setShowAll] = useState(false);
-
     const offersRef = useRef(null);
 
+    const navigate = useNavigate();
     // Offers data
     const offers = [
         {
@@ -136,12 +137,12 @@ const Offers = () => {
                         <div
                             className={`offer-card ${offer.theme}`}
                             key={offer.id}
-                            onClick={() => navigate(`/coupon-details/${offer.id}`)}
+                            onClick={() => navigate(`/Coupon/${offer.id}`)}
                             role="button"
                             tabIndex={0}
                             onKeyDown={(e) => {
                                 if (e.key === "Enter") {
-                                    navigate(`/coupon/details${offer.id}`)
+                                    navigate(`/Coupon/${offer.id}`)
                                 }
                             }}
                         >

@@ -1,0 +1,267 @@
+
+.passenger-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.passenger-container {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.passenger-heading {
+  margin-bottom: 30px;
+}
+
+.passenger-heading span {
+  color: #e63946;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.passenger-heading h1 {
+  margin: 8px 0;
+  color: #172b4d;
+  font-size: 30px;
+}
+
+.passenger-heading p {
+  margin: 0;
+  color: #7b8495;
+}
+
+.passenger-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  align-items: start;
+  gap: 25px;
+}
+
+.passenger-form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.passenger-card,
+.passenger-summary {
+  padding: 25px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.04);
+}
+
+.passenger-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.passenger-card-heading h2,
+.passenger-summary h2 {
+  margin: 0;
+  color: #172b4d;
+  font-size: 19px;
+}
+
+.passenger-card-heading p {
+  margin: 6px 0 0;
+  color: #8992a3;
+  font-size: 13px;
+}
+
+.passenger-seat-tag {
+  padding: 8px 12px;
+  border-radius: 7px;
+  background: #fff0f0;
+  color: #e63946;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.passenger-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.passenger-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.passenger-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.passenger-field label {
+  color: #344054;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.passenger-field input,
+.passenger-field select {
+  width: 100%;
+  height: 47px;
+  padding: 0 13px;
+  border: 1px solid #dce2ea;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  color: #172033;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.passenger-field input:focus,
+.passenger-field select:focus {
+  border-color: #e63946;
+  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.08);
+}
+
+.passenger-continue-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #e63946;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.passenger-continue-btn:hover {
+  background: #c92d39;
+}
+
+.passenger-summary {
+  position: sticky;
+  top: 20px;
+}
+
+.passenger-summary h2 {
+  margin-bottom: 22px;
+}
+
+.passenger-route {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background: #fff3f3;
+  color: #d92d3a;
+}
+
+.passenger-summary-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 13px 0;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.passenger-summary-row span {
+  color: #8992a3;
+  font-size: 13px;
+}
+
+.passenger-summary-row strong {
+  color: #344054;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.passenger-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  color: #172b4d;
+  font-weight: 700;
+}
+
+.passenger-total strong {
+  color: #e63946;
+  font-size: 23px;
+}
+
+.passenger-summary-note {
+  margin-top: 18px;
+  color: #8992a3;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.passenger-error {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.passenger-error button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 7px;
+  background: #e63946;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .passenger-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .passenger-summary {
+    position: static;
+  }
+}
+
+@media (max-width: 480px) {
+  .passenger-page {
+    padding: 25px 12px;
+  }
+
+  .passenger-card,
+  .passenger-summary {
+    padding: 18px;
+  }
+
+  .passenger-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .passenger-field.full-width {
+    grid-column: auto;
+  }
+
+  .passenger-heading h1 {
+    font-size: 25px;
+  }
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}

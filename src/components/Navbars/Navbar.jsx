@@ -76,7 +76,7 @@ const Navbar = () => {
                             className={`nav-button ${activeMenu === "booking" ? "selected" : ""}`}
                             onClick={() => handleMenu("booking")}
                         >
-                            <span><IoListSharp /> Booking</span>
+                            <span onClick={() => navigate("/Buslisting/")}><IoListSharp /> Booking</span>
                             {/* <span className="arrow">⌄</span> */}
                         </button>
 
@@ -132,7 +132,7 @@ const Navbar = () => {
 
                         <button
                             className={`nav-button ${activeMenu === "account" ? "selected" : ""}`}
-                            onClick={() => handleMenu("account")}
+                            onClick={() => navigate("/Accounts")}
                         >
                             <span><FaRegCircleUser /> Account</span>
                             {/* <span className="arrow">⌄</span> */}

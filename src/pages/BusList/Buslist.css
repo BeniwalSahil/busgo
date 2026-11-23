@@ -1,0 +1,533 @@
+
+.bus-listing-page {
+  background: #f7f8fc;
+  min-height: 100vh;
+  padding: 30px 6%;
+  color: #17233d;
+}
+
+/* Search summary */
+
+.modify-search-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.modify-search-form input {
+    padding: 11px 12px;
+    border: 1px solid #e0e4ec;
+    border-radius: 7px;
+    outline: none;
+}
+
+.modify-search-form input:focus {
+    border-color: #e63946;
+}
+
+.modify-search-form button {
+    padding: 12px 18px;
+    background: #e63946;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.listing-search-bar {
+  background: #fff;
+  border: 1px solid #e8eaf0;
+  border-radius: 12px;
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: 0 3px 15px rgba(20, 35, 60, 0.04);
+}
+
+.listing-route {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.listing-route small {
+  color: #8992a5;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.listing-route h3 {
+  font-size: 19px;
+  margin: 5px 0 0;
+}
+
+.route-arrow {
+  color: #e63946;
+  font-size: 25px;
+}
+
+.modify-search-btn {
+  background: #fff;
+  color: #e63946;
+  border: 1px solid #e63946;
+  border-radius: 7px;
+  padding: 11px 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modify-search-btn:hover {
+  background: #e63946;
+  color: #fff;
+}
+
+/* Heading */
+
+.listing-heading {
+  margin: 30px 0 20px;
+}
+
+.listing-heading h2 {
+  font-size: 25px;
+  margin: 0 0 7px;
+}
+
+.listing-heading p {
+  color: #7d8799;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Main layout */
+
+.listing-layout {
+  display: grid;
+  grid-template-columns: 245px 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+/* Filters */
+
+.listing-filters {
+  background: #fff;
+  border: 1px solid #e8eaf0;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.filter-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.filter-heading h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.filter-heading button {
+  border: none;
+  background: none;
+  color: #e63946;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filter-group {
+  padding: 20px 0;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.filter-group h4 {
+  margin: 0 0 15px;
+  font-size: 15px;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 13px 0;
+  color: #596579;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter-option input {
+  accent-color: #e63946;
+}
+
+.price-range-label {
+  display: flex;
+  justify-content: space-between;
+  color: #7d8799;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.price-range-label strong {
+  color: #17233d;
+}
+
+.filter-group input[type="range"] {
+  width: 100%;
+  accent-color: #e63946;
+  cursor: pointer;
+}
+
+/* Results */
+
+.listing-results {
+  min-width: 0;
+}
+
+.listing-sort-bar {
+  background: #fff;
+  border: 1px solid #e8eaf0;
+  border-radius: 10px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.listing-sort-bar h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.sort-options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #7d8799;
+}
+
+.sort-options select {
+  border: 1px solid #e0e4ec;
+  border-radius: 6px;
+  padding: 8px 10px;
+  outline: none;
+  color: #17233d;
+  background: #fff;
+}
+
+/* Bus card */
+
+.bus-card {
+  background: #fff;
+  border: 1px solid #e8eaf0;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 16px;
+  transition: 0.25s ease;
+}
+
+.bus-card:hover {
+  border-color: #f1a0a6;
+  box-shadow: 0 7px 22px rgba(20, 35, 60, 0.07);
+  transform: translateY(-2px);
+}
+
+.bus-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.bus-operator {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.bus-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background: #fff0f1;
+  color: #e63946;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.bus-operator h3 {
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+
+.bus-operator p {
+  font-size: 13px;
+  color: #8992a5;
+  margin: 0;
+}
+
+.bus-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.bus-rating span {
+  background: #e8f7ee;
+  color: #16834a;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.bus-rating small {
+  color: #8992a5;
+  font-size: 11px;
+}
+
+/* Timing */
+
+.bus-timing-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 15px;
+  padding: 22px 0;
+}
+
+.bus-timing-row h2 {
+  font-size: 21px;
+  margin: 0 0 5px;
+}
+
+.bus-timing-row p {
+  color: #8992a5;
+  font-size: 13px;
+  margin: 0;
+}
+
+.bus-duration {
+  text-align: center;
+}
+
+.bus-duration span {
+  font-size: 12px;
+  color: #596579;
+}
+
+.duration-line {
+  height: 1px;
+  background: #dce1e9;
+  margin: 9px 0;
+  position: relative;
+}
+
+.duration-line::before,
+.duration-line::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e63946;
+}
+
+.duration-line::before {
+  left: 0;
+}
+
+.duration-line::after {
+  right: 0;
+}
+
+.bus-duration small {
+  color: #8992a5;
+  font-size: 11px;
+}
+
+.bus-price {
+  text-align: right;
+}
+
+.bus-price h2 {
+  color: #17233d;
+}
+
+.bus-price small {
+  color: #8992a5;
+  font-size: 11px;
+}
+
+/* Bottom section */
+
+.bus-card-bottom {
+  border-top: 1px solid #edf0f5;
+  padding-top: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.bus-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.bus-amenities span {
+  background: #f5f6fa;
+  color: #697488;
+  padding: 6px 9px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+.bus-seat-action {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.bus-seat-action small {
+  color: #16834a;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.bus-seat-action button,
+.no-buses-found button {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 11px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.bus-seat-action button:hover,
+.no-buses-found button:hover {
+  background: #c92d39;
+}
+
+/* Empty state */
+
+.no-buses-found {
+  background: #fff;
+  border: 1px solid #e8eaf0;
+  border-radius: 12px;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.no-buses-found p {
+  color: #8992a5;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .listing-layout {
+    grid-template-columns: 200px 1fr;
+  }
+
+  .bus-timing-row {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 22px;
+  }
+
+  .bus-price {
+    text-align: left;
+  }
+
+  .bus-card-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .bus-seat-action {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 650px) {
+  .bus-listing-page {
+    padding: 18px 4%;
+  }
+
+  .listing-search-bar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .listing-route {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .listing-route h3 {
+    font-size: 16px;
+  }
+
+  .listing-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .listing-filters {
+    padding: 15px;
+  }
+
+  .filter-group {
+    padding: 12px 0;
+  }
+
+  .listing-sort-bar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .bus-card {
+    padding: 15px;
+  }
+
+  .bus-timing-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bus-timing-row h2 {
+    font-size: 18px;
+  }
+
+  .bus-amenities {
+    gap: 6px;
+  }
+
+  .bus-seat-action {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .bus-seat-action button {
+    width: 100%;
+  }
+}

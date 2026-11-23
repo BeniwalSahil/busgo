@@ -12,12 +12,22 @@ import Testimonial from './Testimonial/Testimonial'
 import FAQ from "./Faq/Faq";
 import PopularLinks from './PopularRouteCitiesBusOperator/PopRouteCitiesBusOperator'
 
+
+
 const Home = () => {
 
     // State management
     const [fromCity, setFromCity] = useState("");
     const [toCity, setToCity] = useState("");
     const [journeyDate, setJourneyDate] = useState("2026-11-20");
+
+    // Current local date
+    const now = new Date();
+    const today = [
+        now.getFullYear(),
+        String(now.getMonth() + 1).padStart(2, "0"),
+        String(now.getDate()).padStart(2, "0")
+    ].join("-");
 
     const navigate = useNavigate();
 
@@ -31,12 +41,15 @@ const Home = () => {
     const handleSearch = (e) => {
         e.preventDefault();
 
-        if (!fromCity.trim() || !toCity.trim()) {
+        const from = fromCity.trim();
+        const to = toCity.trim();
+
+        if (!from || !to) {
             alert("Please enter both source and destination cities.");
             return;
         }
 
-        if (fromCity.trim().toLowerCase() === toCity.trim().toLowerCase()) {
+        if (from.toLowerCase() === to.toLowerCase()) {
             alert("Source and destination cannot be the same.");
             return;
         }
@@ -46,8 +59,13 @@ const Home = () => {
             return;
         }
 
+        if (journeyDate < today) {
+            alert("Please select a valid journey date.");
+            return;
+        }
+
         navigate(
-            `/bus-listing?from=${encodeURIComponent(fromCity)}&to=${encodeURIComponent(toCity)}&date=${journeyDate}`
+            `/Buslisting?from=${encodeURIComponent(from)}&to=${encodeURIComponent(to)}&date=${journeyDate}`
         );
     };
 
@@ -63,6 +81,7 @@ const Home = () => {
         setFromCity(from);
         setToCity(to);
     };
+
 
     return (
         <main className="home-page">
@@ -130,7 +149,7 @@ const Home = () => {
                             <input
                                 id="journeyDate"
                                 type="date"
-                                min="2026-11-16"
+                                min={today}
                                 value={journeyDate}
                                 onChange={(e) => setJourneyDate(e.target.value)}
                             />
